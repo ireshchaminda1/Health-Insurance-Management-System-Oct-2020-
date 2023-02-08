@@ -1,0 +1,175 @@
+*{
+	
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	
+}
+
+.body-content{
+	
+	width:100%;
+	
+	text-align:justify;
+	box-sizing:boder-box;
+	font-size:18px;
+	line-height:40px;
+}
+
+.footer{
+	width:100%;
+	background:#00121b;
+    display:block;
+    padding: 0px;
+    
+
+	
+}
+.inner-footer{
+	width:95%;
+    margin:auto;
+    padding: 30px 10px;
+	display:flex;
+	flex-wrap:wrap;
+	box-sizing:border-box;
+    justify-content:center;
+
+	
+}
+
+.footer-items1{
+	width:25%;
+    float:left;
+    padding-left: 10px;
+	box-sizing:border-box;
+	
+}
+
+.footer-items2{
+	width:25%;
+    align-content: center;
+    align-items: center;
+    
+	box-sizing:border-box;
+	
+}
+
+.footer-items3{
+	width:25%;
+    float:right;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding-right: 10px;
+	
+}
+
+
+a{
+	text-decoration:none;
+}
+
+
+h5{
+	
+	color:red;
+	font-size:16px;
+	font-weight:lighter;
+    text-transform:uppercase;
+    list-style: inside;
+    text-decoration: none;
+    
+}
+
+
+ul{
+	list-style:none;
+	color:white;
+	font-size:15px;
+    letter-spacing:0.5px;
+
+
+}
+
+ul a{
+
+	text-decoration:none;
+	outline:none;
+	color: rgb(247, 240, 240);
+	transition:0.3s;
+		
+}
+
+ul a :hover{
+	color:#ff9800;
+}
+
+ul li{
+	margin:10px 0;
+	height:25px;
+	
+}
+
+li i{
+	margin-right:20px;
+}
+
+.social-media{
+	width:100%;
+	color:white;
+	text-align:center;
+}
+.social-media a{
+	text-decoration:none;
+}
+
+.social-media i{
+	height:40px;
+	width:40px;
+	margin:20px 5px;
+	padding:10px;
+	color:#ffffff;
+	border-radius:50%;
+	border:1px solid grey;
+	transition:0.3s;
+}
+
+.social-media i:hover{
+	background:grey;
+}
+
+@screen and (max-width:1085px){
+	.footer-items{ width:50%;
+	}
+}
+@screen and (max-width:600px){
+	.footer-items{ width:100%;
+	}
+}
+.footer-items4 {
+	float: right;
+}
+
+
+.footer-items4 a{
+	display:block;
+	color:white;
+	text-align:center;
+	padding:15px 16px ;
+	text-decoration:none;
+
+
+}
+.button1 {
+	width:200px;
+    background-color:white;
+    border: none;
+    color:black;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+	cursor: pointer;
+	font-weight: bold;
+  }

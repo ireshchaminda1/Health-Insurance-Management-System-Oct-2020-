@@ -1,0 +1,93 @@
+ul.reg {
+  list-style-type: none;
+  margin: 50px;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(59, 67, 177);
+}
+
+li.reg {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 20px;
+  text-decoration: none;
+  border-right:2px solid #bbb;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 15px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 70px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-left: 500px;
+  cursor: pointer;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+
+.form-inline {  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-left: 85px
+}
+
+.form-inline label {
+  margin: 5px 10px 5px 0;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  cursor: pointer;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+  
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+select {
+  position: relative;
+  font-family: Arial;
+}

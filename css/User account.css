@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin:0px;
+	padding: 0px;
+	 background-image: url(../img/us.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+a{
+	text-decoration:none;
+}
+
+#act{
+	position: relative;
+	left: 900px;
+	top:300px;
+     bottom: 900px;
+	transform: translate(-50%,-50%);
+	display: flex;
+	align-items: center;
+}
+
+
+#act2{
+	position: relative;
+	left: 350px;
+	top:250px;
+     bottom: 200px;
+
+	transform: translate(-50%,-50%);
+	display: flex;
+	align-items: center;
+}
+
+.tact1{
+	width:300px;
+	height: 500px;
+	background-color:#434445;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px 0px 0px 15px;
+	padding: 30px 30px;
+	box-shadow: 2px 0px 30px rgba(0,0,0,0.1);
+}
+.tact2{
+	width:700px;
+	height: 500px;
+	background-color:#ffffff;
+	display: flex;
+	right:100px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	float:right;
+	border-radius: 0px 15px 15px 0px;
+	padding: 30px 30px;
+	box-shadow: 2px 0px 30px rgba(0,0,0,0.1);
+}
+
+.c-2d{
+	margin: 15px 0px;
+	justify-content: center;
+	align-items: left;
+}
+.c-2d input{
+	width:250px;
+	height: 45px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(251,251,251,0.1);
+	outline: none;
+	border-color:#00bfff;
+	margin: 0px 20px 20px 0px;
+	padding: 20px 20px 20px 20px;
+	box-sizing: border-box;
+	align-items: left;
+	color: #000000;
+	
+}
+.puts1 button{
+	width:200px;
+	height: 40px;
+	background-color: #FFFFFF;
+	border: none;
+	outline: none;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+	letter-spacing: 1px; 
+}
+
+.puts2 button{
+	width:100px;
+	height: 40px;
+	top:100px;
+	background-color: #FFFFFF;
+	margin: 70px 10px 100px 40px;
+	border: none;
+	outline: none;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+	letter-spacing: 1px;
+}
+.email{
+  position:relative;
+  left:120px;
+}
+.pho{
+  position:relative;
+  left:60px;
+
+}
+.ln{
+  position:relative;
+  left:83px;
+
+}
+.fn{
+  position:relative;
+  left:85px;
+}
+.nm{
+  position:relative;
+  left:95px;
+}
+.gg{
+  position:relative;
+  left:15px;
+}
+.c-2d input:focus{
+	border-bottom: 1px solid rgba(252,252,252,1.00);
+	transition: all ease 0.5s;
+}
+
+.puts1 button:active{
+	transform: scale(1.02);
+}
+.puts2 button:active{
+	transform: scale(1.02);
+}
+
+
+

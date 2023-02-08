@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/style1.css">
+<link rel="stylesheet" href="../css/registration.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/footer.css">
+<script src="../js/script1.js"></script>
+<script src="../js/register.js"></script> 
+
+<title>Registation-Medical Condition</title>
+</head>
+
+<body>
+
+<!--Header-->
+
+<div class="header">
+    <img class="float" src="../img/logo.png" style="width:200px;height:150px;margin-left:100px;">
+	<center> <h2>AXA Health Insurance Management<br>System</h2> </center>
+    <p align="right"><button class="w3-button w3-border w3-hover-blue" onclick="loginpage()">Log In / Sign In</button></p>
+</div>
+    
+<div class="menubar">
+  <a class="active" href="home.html">Home</a>
+  <a href="index2.html">Request Individual Consult</a>
+  <a href="claimsinfo.html">Claim Insurance</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contact us.html">Contact Us</a>
+</div>
+<!--End of Header-->
+
+<br>
+
+<h2 style="text-align: center">Registration Form For Insurance Plan</h2>
+
+<ul class="reg">
+  <li class="reg"><a href="registration.html">Personal  Details</a></li>
+  <li class="reg"><a href="RegistrationEmployee.html">Current job and Income Information</a></li>
+  <li class="reg"><a href="RegistrationMedical.html">Medical Condition</a></li>
+  <li class="reg"><a href="">Insurance Recovery Person Details</a></li>
+  <li class="reg"><a href="RegistrationDoc.html">Document</a></li>
+</ul>
+
+<div class="container">
+  <form action="../php/Regmedical.php" method="POST">
+    <div class="form-group">
+      <label for="claimNIC">Please Enter User's NIC Number :</label>
+      <input type="text" class="form-control" id="nicNum" name="nicNum" size="100">
+    </div>
+</div>
+<br>
+
+<p style="margin-left:15px"><b>Any Previous Medical Condition?</b></p>
+<div class="container">
+  <div class="form-group">
+  <input type="checkbox" id="medical" name="medical1" value="Yes" "margin-left:80px">
+  <label for="medical1"> &nbsp;Hear Condition Problem</label><br>
+  </div>
+
+</div>
+<br>
+
+<div class="container">
+
+  <div class="form-group">
+  <input type="checkbox" id="medical" name="medical2" value="Yes">
+  <label for="medical2"> &nbsp;Stroke</label><br>
+ </div>
+
+</div>
+<br>
+
+<div class="container">
+
+    <div class="form-group">
+      <input type="checkbox" id="medical" name="medical3" value="Yes">
+      <label for="medical3"> &nbsp;Cancer</label><br>
+ </div>
+
+</div>
+<br>
+
+<div class="container">
+
+      <div class="form-group">
+        <input type="checkbox" id="medical" name="medical4" value="Yes">
+        <label for="medical4"> &nbsp;Diabetes</label><br>
+ </div>
+
+</div>
+<br>
+
+<div class="container">
+
+  <div class="form-group">
+  <input type="checkbox" id="medical" name="medical5" value="Yes">
+  <label for="medical5"> &nbsp;Mental illness, including depression, that has required referral to a specialist.</label><br>
+  </div>
+
+</div>
+<br>
+
+<p style="margin-left:15px"><b>Are you a tobacco user?</b><br>Have you used any tobacco products within the last 12 months?<br><br>By "Tobacco Products" we mean smoking or chewing tobacco - not using e-cigarettes or vaporizers.</p>
+<div class="container">
+
+    <div class="form-group">
+      <input type="radio" id="tobaccoyes" name="tobacco" value="Yes">
+      <label for="tobaccoyes">&nbsp; Yes&emsp;</label>
+      <input type="radio" id="tobaccono" name="tobacco" value="No">
+      <label for="tobaccono"> &nbsp;No&emsp;&emsp;</label>
+    </div>
+
+</div>
+<br>
+
+<p style="margin-left:15px"><b>Select Your Health Insurance Plan :</b></p>
+<div class="container">
+
+    <div class="form-group">
+      <input type="radio" id="basic" name="insurance" value="Basic">
+      <label for="basic">&nbsp; Basic&emsp;</label>
+      <input type="radio" id="standerd" name="insurance" value="Standerd">
+      <label for="standerd"> &nbsp;Standerd&emsp;&emsp;</label>
+      <input type="radio" id="premium" name="insurance" value="Premium">
+      <label for="premium"> &nbsp;Premium&emsp;&emsp;</label>
+    </div>
+</div>
+<br>
+<p style="margin-left:15px"><b>Privacy Policy</b><br><br>Please reach out and read our Privacy Policy in order to understand how your information is used and shared, and check below if you accept the policy.</p>
+<div class="container">
+  <div class="form-group">
+  <input type="checkbox" id="agree" name="agree" value="agreed" onclick="enableButton()" required>
+  <label for="checked"> &nbsp;By Clicking this you agree to our Terms, Data Policy and Cookie Policy.</label><br>
+  </div>
+</div>
+<br>
+
+<center>
+<p style="margin-left:15px"><b>Once you submit your application, We will contact you shortly to complete your membership application.</b></p>
+</center>
+  <input type="submit" value="Submit">
+</form>
+<p style="margin-left:1100px"><button class="w3-button w3-border w3-hover-black" id="basic" onclick="linktoweb('recover')">Next</button></p>
+
+<br><br>
+
+  <!-- Footer -->
+        
+            <div class="footer">
+                
+                <div class="social-media">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></></i></a>
+                    <a href="https://myaccount.google.com/profile?hl=en"><i class="fa fa-google-plus" aria-hidden="true"></></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope" aria-hidden="true"></></i></a>
+                </ul>
+            </div>
+			
+            <div class="inner-footer">
+
+                    
+            <div class="footer-items1">
+                <h5 style="color:aliceblue;">Contact Details</h5>
+                <ul>
+                    <li><i class ="fa fa-map-marker" aria-hidden="ture"></i> 10, Main Bulding,Colombo-10</li>
+                    <li><i class ="fa fa-phone" aria-hidden="ture"></i> +94 76 536 7609</li>
+                    <li><i class ="fa fa-envelope" aria-hidden="ture"></i> support@axa.lk</li>
+                </ul>
+            </div>
+
+            <div class="footer-items2">
+                <center>                  
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#">Request individual consult</a></li>     
+                </ul>
+            </div>
+            </center>
+			
+            <div style="float:right;"class="footer-items3">
+                <div style="float:right;">
+                     <h5 style="color: aliceblue;">Useful Links</h5>   
+                        <ul >
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="contact us.html">Contact Us</a></li>
+                            <li><a href="claimsinfo.html">Claim Insurance</a></li>
+                       </ul>
+                </div>
+            </div>
+                     
+            </div>
+			
+             <center>
+                <a style="text-align: center;align-items: center;"href="#" class="button1">Feedback</a>
+                    <p style="color:antiquewhite ;font-style: italic;"> ©2020 AXA All Rights Reserved </p><br>
+                <div style="text-align: right;color:blue">
+                       <a href="home.html">Home &nbsp;</a>
+                       <a href="#">Privacy Policy &nbsp; &nbsp;</a>
+                       <a href="#">Terms & conditions &nbsp; &nbsp;</a>
+                       <a href="#">Cookie policy &nbsp; &nbsp;</a>
+                       <a href="#">Modern Slavery act&nbsp; &nbsp;</a>
+                       <a href="#">Tax strategy &nbsp; &nbsp;</a>
+                       <a href="#">Regulated &nbsp; &nbsp;</a>       
+                </div>
+            </center>
+            </div>
+        <!-- ./Footer -->
+
+</body>
+</html>

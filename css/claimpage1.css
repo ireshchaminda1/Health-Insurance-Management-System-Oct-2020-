@@ -1,0 +1,125 @@
+body{
+  background-image: url(../img/doc1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+.corter {
+  position:relative;
+  border-radius: 15px;
+  background-color:grey  ;
+  padding: 10px  ;
+  color: black;
+  opacity: 0.6;
+  width:800px;
+  left :320px;
+  font-size:25px
+}
+.name{
+	position:relative;
+    right:270px;
+}
+
+.name2{
+  position: relative;
+  left: 80px;
+  top:0px;
+}
+
+
+.txt1{
+  position:relative;
+  right:70px;
+
+}
+.txt2{
+  
+  position: relative;
+  left: 70px;
+  top:0px;
+}
+
+.bt1{
+  position: relative;
+  left:320px
+}
+
+
+.nm1{
+  position:relative;
+  right:150px;
+
+}
+
+.nm2{
+  position:relative;
+  left:30px;
+
+}
+.txt3{
+  position:relative;
+  right:20px;
+
+}
+
+.txt4{
+  position:relative;
+  left:20px;
+
+}
+
+input[type=text] textarea{
+  width: 80%;
+  padding: 0px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  resize: vertical;
+  align-items: right;
+}
+.area input{
+	height:20px;
+  width: 50%;
+  padding: 20px;
+  
+	
+}	
+  
+  input[type=button], input[type=submit] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
+  .hov{
+     border-radius: 10px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+	margin:20px;
+    transform: translate(-50%, -50%);
+    display: flex;
+  }
+  .hov li{
+    list-style: none;
+  }
+  .hov li a{
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+	border-radius: 10px;
+    text-transform: uppercase;
+    color: #333;
+    font-weight: bold;
+  }
+  li.active a{
+    background: #06e015;
+    color: #fff;
+  }

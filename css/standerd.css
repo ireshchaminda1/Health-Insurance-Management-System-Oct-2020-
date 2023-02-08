@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+  width:60%;
+  margin-left:270px
+}
+
+th, td {
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #FF0000;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 500px;
+  left: 50px;
+}

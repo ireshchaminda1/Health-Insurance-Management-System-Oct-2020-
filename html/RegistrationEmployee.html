@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../css/style1.css">
+<link rel="stylesheet" href="../css/registration.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/footer.css">
+<script src="../js/script1.js"></script>
+<script src="../js/register.js"></script> 
+
+<title>Current Job and Income Information</title>
+</head>
+
+<body>
+
+<!--Header-->
+
+	<div class="header">
+    <img class="float" src="../img/logo.png" style="width:200px;height:150px;margin-left:100px;">
+	<center> <h2>AXA Health Insurance Management<br>System</h2> </center>
+    <p align="right"><button class="w3-button w3-border w3-hover-blue" onclick="loginpage()">Log In / Sign In</button></p>
+	</div>
+    
+<div class="menubar">
+  <a class="active" href="home.html">Home</a>
+  <a href="index2.html">Request Individual Consult</a>
+  <a href="claimsinfo.html">Claim Insurance</a>
+  <a href="aboutus.html">About Us</a>
+  <a href="contact us.html">Contact Us</a>
+</div>
+
+<!--End of Header-->
+
+<br>
+
+<h2 style="text-align: center">Registration Form For Insurance Plan</h2>
+
+<ul class="reg">
+  <li class="reg"><a href="registration.html">Personal  Details</a></li>
+  <li class="reg"><a href="RegistrationEmployee.html">Current job and Income Information</a></li>
+  <li class="reg"><a href="RegistrationMedical.html">Medical Condition</a></li>
+  <li class="reg"><a href="">Insurance Recovery Person Details</a></li>
+  <li class="reg"><a href="RegistrationDoc.html">Document</a></li>
+</ul>
+
+<div class="container">
+  <form action="../php/registrationemp.php" method="POST" onclick="return formvalidation()">
+    <div class="form-group">
+      <label for="claimNIC">Please Enter User's NIC Number :</label>
+      <input type="text" class="form-control" id="nicNum" name="nicNum" size="100">
+    </div>
+</div>
+
+<p style="margin-left:15px"><b>Current job and Income information</b></p>
+
+<div class="container">
+    <div class="form-group">
+      <input type="radio" id="employed" name="status" value="employed">
+      <label for="employed">&nbsp; Employed&emsp;&emsp;</label>
+      <input type="radio" id="notemployed" name="status" value="notemployed">
+      <label for="notemployed"> &nbsp;Not-Employed (Skip this section)&emsp;&emsp;</label>
+      <input type="radio" id="selfemployed" name="status" value="selfemployed">
+      <label for="selfemployed"> &nbsp;Self-Employed (Skip this section)</label>
+    </div>
+</div>
+<br>
+
+<div class="container">
+    <div class="form-group">
+      <label for="employername">Employer Name :</label>
+      <input type="text" class="form-control" id="employername" name="employername" size="100">
+    </div>
+</div>
+<br>
+
+<p style="margin-left:15px"><b>Employer Address</b></p>
+
+<div class="container">
+    <div class="form-group">
+      <label for="empstreet1"> Street Address :</label>
+      <input type="text" class="form-control" id="empstreet1" name="empstreet1">
+    </div>
+</div>
+<br>
+
+<div class="container">
+    <div class="form-group">
+      <label for="empstreet2"> Street Address 02 :</label>
+      <input type="text" class="form-control" id="empstreet2" name="empstreet2">
+    </div>
+</div>
+<br>
+
+<div class="container">
+    <div class="form-group">
+      <label for="empcity"> City :</label>
+      <input type="text" class="form-control" id="empcity" name="empcity">
+    </div>
+    <div class="form-group">
+      <label for="empprovince">State / Province:</label>
+      <input type="text" class="form-control" id="empprovince" name="empprovince">
+    </div>
+</div>
+<div class="container">
+    <div class="form-group">
+      <label for="emppcode"> Postal Code :</label>
+      <input type="text" class="form-control" id="emppcode" name="emppcode">
+    </div>
+</div>
+
+<p style="margin-left:15px"><b>Employer Telephone</b></p>
+<div class="container">
+    <div class="form-group">
+      <label for="empmobile"> Mobile :</label>
+      <input type="text" class="form-control" id="empmobile" name="empmobile"  maxlength="10">
+    </div>
+  
+   <div class="form-group">
+      <label for="emphome">Home :</label>
+      <input type="text" class="form-control" id="emphome" name="emphome" maxlength="10" >
+    </div>
+</div>
+<br>
+
+<p style="margin-left:15px"><b>Wages / Tips $ :</b>
+<div class="container">
+
+    <div class="form-group">
+      <input type="text" class="form-control" id="wages" name="wages" >
+    </div><p>&emsp;</p>
+
+     <div class="form-group">
+      <input type="radio" id="hourly" name="empwagetype" value="hourly">
+      <label for="hourly">&nbsp; Hourly&emsp;&emsp;</label>
+      <input type="radio" id="weekly" name="empwagetype" value="weekly">
+      <label for="weekly"> &nbsp;Weekly&emsp;&emsp;</label>
+      <input type="radio" id="monthly" name="empwagetype" value="monthly">
+      <label for="monthly"> &nbsp;Monthly&emsp;&emsp;</label>
+      <input type="radio" id="yearly" name="empwagetype" value="yearly">
+      <label for="yearly"> &nbsp;Yearly</label>
+    </div>
+</div>
+</p>
+<br>
+
+<p style="margin-left:15px"><b>If you are Self-Employed, Then please answer a and b:</b></p>
+<div class="container">
+    <div class="form-group">
+      <label for="typeofwork">a) Type of Work :</label>
+      <input type="text" class="form-control" id="typeofwork" name="typeofwork">
+    </div>
+</div>
+<div class="container">
+   <div class="form-group">
+      <label for="selfincome">b) Self-Employed this month? How much net income(profits once business expenses are paid) will you get from this $ :</label>
+      <input type="text" class="form-control" id="selfincome" name="selfincome" >
+    </div>
+</div>
+<br>
+
+<p style="margin-left:15px"><b>Privacy Policy</b><br><br>Please reach out and read our Privacy Policy in order to understand how your information is used and shared, and check below if you accept the policy.</p>
+<div class="container">
+  <div class="form-group">
+  <input type="checkbox" id="agree" name="agree" value="agreed" onclick="enableButton()" required>
+  <label for="checked"> &nbsp;By Clicking this you agree to our Terms, Data Policy and Cookie Policy.</label><br>
+  </div>
+</div>
+<br>
+
+<center>
+<p style="margin-left:15px"><b>Once you submit your application, We will contact you shortly to complete your membership application.</b></p>
+</center>
+  <input type="submit" value="Submit">
+</form>
+
+
+<p style="margin-left:1100px"><button class="w3-button w3-border w3-hover-black" id="basic" onclick="linktoweb('medical')">Next</button></p>
+
+<br><br>
+
+  <!-- Footer -->
+        
+            <div class="footer">
+                
+                <div class="social-media">
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></></i></a>
+                    <a href="https://myaccount.google.com/profile?hl=en"><i class="fa fa-google-plus" aria-hidden="true"></></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa fa-envelope" aria-hidden="true"></></i></a>
+                </ul>
+            </div>
+			
+            <div class="inner-footer">
+
+                    
+            <div class="footer-items1">
+                <h5 style="color:aliceblue;">Contact Details</h5>
+                <ul>
+                    <li><i class ="fa fa-map-marker" aria-hidden="ture"></i> 10, Main Bulding,Colombo-10</li>
+                    <li><i class ="fa fa-phone" aria-hidden="ture"></i> +94 76 536 7609</li>
+                    <li><i class ="fa fa-envelope" aria-hidden="ture"></i> support@axa.lk</li>
+                </ul>
+            </div>
+
+            <div class="footer-items2">
+                <center>                  
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index2.html">Request individual consult</a></li>     
+                </ul>
+            </div>
+            </center>
+			
+            <div style="float:right;"class="footer-items3">
+                <div style="float:right;">
+                     <h5 style="color: aliceblue;">Useful Links</h5>   
+                        <ul >
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="contact us.html">Contact Us</a></li>
+                            <li><a href="claimsinfo.html">Claim Insurance</a></li>
+                       </ul>
+                </div>
+            </div>
+                     
+            </div>
+			
+             <center>
+                <a style="text-align: center;align-items: center;"href="#" class="button1">Feedback</a>
+                    <p style="color:antiquewhite ;font-style: italic;"> ©2020 AXA All Rights Reserved </p><br>
+                <div style="text-align: right;color:blue" >
+                       <a href="home.html">Home &nbsp;</a>
+                       <a href="#">Privacy Policy &nbsp; &nbsp;</a>
+                       <a href="#">Terms & conditions &nbsp; &nbsp;</a>
+                       <a href="#">Cookie policy &nbsp; &nbsp;</a>
+                       <a href="#">Modern Slavery act&nbsp; &nbsp;</a>
+                       <a href="#">Tax strategy &nbsp; &nbsp;</a>
+                       <a href="#">Regulated &nbsp; &nbsp;</a>       
+                </div>
+            </center>
+            </div>
+        <!-- ./Footer -->
+
+</body>
+</html>

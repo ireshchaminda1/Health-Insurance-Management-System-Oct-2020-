@@ -1,0 +1,54 @@
+.phpbutton  {
+	box-shadow: 0px 17px 14px -7px #394236;
+	background:linear-gradient(to bottom, #333333 5%, #ff0000 100%);
+	background-color:#333333;
+	border-radius:42px;
+	border:5px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #f50a0a;
+}
+.phpbutton :hover {
+	background:linear-gradient(to bottom, #ff0000 5%, #333333 100%);
+	background-color:#ff0000;
+}
+.phpbutton :active {
+	position:relative;
+	top:1px;
+}
+
+.adminbutton {
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:15px 20px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+	margin-right:30px;
+}
+.adminbutton:hover {
+	background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+	background-color:#019ad2;
+}
+.adminbutton:active {
+	position:relative;
+	top:1px;
+}
+
+hr.admin {
+  border-top: 5px solid black;
+}

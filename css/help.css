@@ -1,0 +1,71 @@
+body{
+    background-image: url(../img/hh.jpg);
+    background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+}
+
+
+.data{
+    align-items: center;
+    margin-right: 600px;
+    margin-top: 100px;
+}
+
+.paramain{
+
+    font-size: 20px;
+    font-weight: bold;
+    position:absolute;
+    margin-left: 50px;
+}
+
+.helpdetails{
+    position: absolute;
+    top: 600px;
+    left: 150px;
+    
+}
+
+.data{
+    
+        width: 650px;
+        padding: 10px;
+        height: 500px;
+        border: 5px solid ;
+        margin: 0;
+        background-image: url(../images/doc.jpg);
+        position: absolute;
+        top: 600px;
+        left: 420px;
+    
+}
+
+.button1{
+    background-color: #461f8d; 
+    border: none;
+    border-radius: 8px;
+    color: rgb(39, 18, 18);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1:hover {
+    background-color: #ac0d77;
+    
+  }
+  
+  .para1{
+      font-size: large;
+      padding: 30px;
+      font-weight: bold;
+  }
+
+  .load1{
+      width:300px;
+      height: 200px;
+  }

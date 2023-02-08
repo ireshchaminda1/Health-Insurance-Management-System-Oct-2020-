@@ -1,0 +1,99 @@
+
+
+body{
+  background-image: url(../img/doc1.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+}
+   .previous a{
+      text-decoration: none;
+      display: inline-block;
+      padding: 8px 16px;
+    }
+
+
+    .container {
+      position: relative;
+      border-radius: 5px;
+      background-color:grey  ;
+      padding: 10px  ;
+      color: black;
+      opacity: 0.6;
+      width: 1200px;
+      left: 150px;
+    }
+
+    input[type=text], select, textarea{
+      width: 50%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      resize: vertical;
+      align-items: center;
+    }
+
+    .previous:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .previous {
+      background-color: goldenrod;
+      color: black;
+      padding: 19.7px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    
+    .round {
+      border-radius: 50%;
+    }
+  
+    .form3{
+      font-size: 20px;
+      font-family: 'Times New Roman', Times, serif;
+      padding-left: 60px;
+      font-weight: bolder;
+      
+  
+      
+      
+    }
+  
+    input[type=button], input[type=submit], input[type=reset] {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-decoration: none;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+
+  
+    .navig{
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+    }
+    .navig li{
+      list-style: none;
+    }
+    .navig li a{
+      position: relative;
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #333;
+      font-weight: bold;
+    }
+    li.active a{
+      background: #06e015;
+      color: #fff;
+    }
